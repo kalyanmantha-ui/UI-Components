@@ -1,0 +1,89 @@
+/* Center the page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Button to trigger Snackbar */
+  #showSnackbar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #showSnackbar:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Snackbar Container */
+  #snackbarContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Snackbar Notification */
+  .snackbar {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    min-width: 280px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards, fadeOut 0.5s forwards 4s;
+  }
+  
+  /* Snackbar Variants */
+  .snackbar.success { background-color: #28a745; }
+  .snackbar.error { background-color: #dc3545; }
+  .snackbar.warning { background-color: #ffc107; color: black; }
+  
+  /* Close Button */
+  .snackbar .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  

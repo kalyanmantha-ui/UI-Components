@@ -1,0 +1,37 @@
+/* Default Light Theme */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Dark Theme */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Toggle Button */
+  #themeToggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  #themeToggle:hover {
+    background: #0056b3;
+  }
+  
+  /* Dark Mode Button Style */
+  body.dark-mode #themeToggle {
+    background: #ffc107;
+    color: black;
+  }
+  

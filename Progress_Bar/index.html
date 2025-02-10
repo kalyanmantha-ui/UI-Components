@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Progress Bar Container -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="progress-controls">
+        <button id="startProgress">Start</button>
+        <button id="pauseProgress">Pause</button>
+        <button id="resetProgress">Reset</button>
+        <input type="range" id="speedControl" min="10" max="200" value="50">
+        <span id="speedLabel">Speed: 50ms</span>
+    </div>
+
+    <!-- Set Progress Manually -->
+    <div class="progress-set">
+        <input type="number" id="setProgress" min="0" max="100" placeholder="Set %">
+        <button id="applyProgress">Apply</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="progress.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Center the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Tabs Container */
+  .tabs {
+    width: 400px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Tab Buttons */
+  .tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .tab-btn {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    flex-grow: 1;
+    border-radius: 5px 5px 0 0;
+    font-size: 16px;
+  }
+  
+  .tab-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Active Tab Button */
+  .tab-btn.active {
+    background: #0056b3;
+    font-weight: bold;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  /* Hide Tab Content */
+  .tab-panel {
+    display: none;
+  }
+  
+  /* Show Active Tab */
+  .tab-panel.active {
+    display: block;
+  }
+  
